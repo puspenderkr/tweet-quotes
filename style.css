@@ -1,0 +1,89 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color : rgb(96, 162, 224);
+    --secondary-color :
+}
+
+body{
+    background: #222f3e;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 70vh;
+    background: var(--main-color);
+    border-radius: 5px;
+    font-family: cursive;
+    overflow: hidden;
+    color: #797d7f;
+    letter-spacing: .5px;
+    display: grid;
+    place-items: center;
+}
+
+
+.main{
+    width: 320px;
+    height: 400px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background: #2f313a;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 400px;
+    background: rgba(225,225,225,.05);
+}
+
+.quotes{
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main .fa-quote-right{
+    font-size: 50px;
+    color: tomato;
+    position: relative;
+    top: 20px;
+}
+.twitter{
+    margin-top: 10%;
+    font-size: 25px;
+    color: lightblue;
+    cursor: pointer;
+}
+.author{
+    /* margin-bottom: 50px; */
+    font-size: 17px;
+    color: tomato;
+    text-align: right;
+    margin-right: 20px;
+
+}
+.button{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    border: lightblue;
+}
